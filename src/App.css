@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+    height: 450px;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 20px 10px 10px 20px;
+    display: flex;
+    background-color: #fff;
+}
+
+.container img {
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+}
+
+.image_full {
+    display: block;
+}
+
+.image_mobile {
+    display: none;
+}
+
+.infos {
+    padding: 30px;
+}
+
+.infos h1 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 0.45rem;
+    color: #797981;
+}
+
+.container h2 {
+    margin-top: 16px;
+    font-size: 3.2rem;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: #1d212a;
+    line-height: 3rem;
+}
+
+.infos p {
+    margin-top: 20px;
+    font-size: 1.35rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #797981;
+    line-height: 2.1rem;
+}
+
+footer {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+}
+
+footer h3 {
+    font-size: 3rem;
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: #3d8168;
+}
+
+footer h4 {
+    margin-left: 20px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #797981;
+    text-decoration: line-through;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    height: 46px;
+    font-size: 1.35rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    background-color: #3d8168;
+    border: 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2d5d4b;
+}
+
+.btn .cart {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 610px;
+        width: 342px;
+        border-radius: 20px 20px 10px 10px;
+    }
+    .container img {
+        width: 342px;
+        border-radius: 10px 10px 0 0;
+    }
+    .infos {
+        padding: 24px;
+    }
+    .container h2,
+    button {
+        width: 294px;
+    }
+    .image_full {
+        display: none;
+    }
+
+    .image_mobile {
+        display: block;
+    }
+}
